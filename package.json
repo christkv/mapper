@@ -1,0 +1,31 @@
+{
+  "name": "mapper",
+  "version": "0.0.1",
+  "description": "A MongoDB mapper and realtime object notifier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/runner.js -t functional"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/christkv/mapper.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mapper",
+    "odm",
+    "realtime"
+  ],
+  "dependencies": {
+    "mongodb": "~2.0"
+  },
+  "devDependencies": {
+    "integra": "latest"
+  },
+  "author": "Christian Kvalheim",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/christkv/mapper/issues"
+  },
+  "homepage": "https://github.com/christkv/mapper"
+}

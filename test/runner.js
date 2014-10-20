@@ -35,6 +35,13 @@ var startupOptions = {
   , skip: false
 }
 
+var startupOptions = {
+    skipStartup: true
+  , skipRestart: true
+  , skipShutdown: true
+  , skip: false
+}
+
 /**
  * Standalone MongoDB Configuration
  */
@@ -43,7 +50,7 @@ var createConfiguration = function(options) {
 
   // Create the configuration
   var Configuration = function(context) {
-    var mongo = require('../');
+    var mongo = require('mongodb');
     var Db = mongo.Db;
     var Server = mongo.Server;
     var ServerManager = require('mongodb-core').ServerManager;
@@ -192,6 +199,9 @@ var runner = new Runner({
 
 var testFiles =[
     '/test/functional/server_oplog_tests.js'
+  , '/test/functional/connect_tests.js'
+  , '/test/functional/define_model_tests.js'
+  , '/test/functional/listen_to_model_changes_tests.js'
 
   // Replicaset tests
   , '/test/functional/replset_oplog_tests.js'

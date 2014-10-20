@@ -17,10 +17,14 @@
     "realtime"
   ],
   "dependencies": {
-    "mongodb": "~2.0"
+      "mongodb": "~2.0"
+    , "mongodb-core": "~1.0"
+    , "pluralize": "1.0.2"
   },
   "devDependencies": {
-    "integra": "latest"
+      "integra": "latest"
+    , "optimist": "0.6.1"
+    , "jsdoc": "3.3.0-alpha9"
   },
   "author": "Christian Kvalheim",
   "license": "Apache 2.0",

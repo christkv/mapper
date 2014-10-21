@@ -202,6 +202,7 @@ var testFiles =[
   , '/test/functional/connect_tests.js'
   , '/test/functional/define_model_tests.js'
   , '/test/functional/listen_to_model_changes_tests.js'
+  , '/test/functional/array_tests.js'
 
   // Replicaset tests
   , '/test/functional/replset_oplog_tests.js'
